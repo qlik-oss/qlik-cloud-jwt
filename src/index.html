@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Native Qlik Sense in a web page</title>
+
+    <!--  importing required libraries  -->
+    <script src="https://unpkg.com/enigma.js"></script>
+    <script src="https://unpkg.com/@nebula.js/stardust"></script>
+    <script src="https://unpkg.com/@nebula.js/sn-bar-chart"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/app.js" type='module' defer></script>
+    
+    <!--  import css  -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+      
+    <main>
+      <div id="should-login-box">
+        <p>To run this example you need to be logged in to the appropriate tenant and allow third party cookies.</p>
+        <p>click on the link below to <b>open it in new tab</b> and after you logged in to your dashboard, get back here again and hit the reload button.</p>
+        <br/>
+        <a target="_blank"><kbd>Ctrl/<span>⌘</span> + click</kbd> here to login to your tenant</a>
+      </div>
+      
+      <div class="divBorder">
+        <h2 class="headerFont">
+          A Response from a REST API request
+        </h2>
+      <div>
+        <pre>
+        <code id="rest">
+        </code>
+        </pre>
+      </div>
+        </div>
+      <br/>
+      <div class="divBorder">
+        <h2 class="headerFont">
+          A visualization from a Qlik Sense app embedded and rendered using Nebula.js
+        </h2>
+      
+      <div class="toolbar"></div>
+      <div id="bar" class="object"></div>
+        </div>
+      <br/>
+      <div class="divBorder">
+        <h2 class="headerFont">
+          A visualization from a Qlik Sense app embedded and rendered using the Single API
+        </h2>
+      <div id="iframe"></div>
+      </div>
+    </main>
+    
+  </body>
+</html>
