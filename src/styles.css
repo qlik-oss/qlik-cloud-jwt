@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 1.25rem;
+}
+
+a:hover {
+  color: blue; 
+}
+
+kbd {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background: #ccc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #2e2e2e;
+}
+
+kbd span {
+  font-size: 1.35rem;
+  line-height: 0px;
+  position: relative;
+  top: 3px;
+}
+
+#should-login-box {
+  width: 100%;
+  padding: 0 1rem 1.25rem 1rem;
+  border: 3px dashed #ccc;
+  border-radius: 1rem;
+  display: none;
+}
+
+.object {
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+
+pre code {
+  display: block;
+  background: none;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: none;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
+  word-break: break-all;
+}
+
+.iframeStyle {
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+
+.headerFont {
+  font-family: "source sans pro"
+}
+
+.divBorder {
+  border-bottom: 8px dotted #009845;
+}
