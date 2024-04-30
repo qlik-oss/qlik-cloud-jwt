@@ -1,14 +1,14 @@
 # "Authorize Users with JWTs for Qlik Embedded" - Authorization and Embedding Examples
 
+> [!IMPORTANT]
+> This tutorial is out-of-date. Please consider leveraging more modern embedding and auth techniques such as OAuth M2M impersonation rather than JWT. Begin your journey by learning about [qlik-embed](https://qlik.dev/embed/qlik-embed/).
 
-> :sparkles: Updated: October 2021<br>
+> :sparkles: Updated: April 2024<br>
 :sparkles: Published: October 2021
 
-This example is referenced in the tutorial [Implement JWT Authorization](https://qlik.dev//tutorials/implement-jwt-authorization)
-on [qlik.dev](https://qlik.dev). It is recommended to use this tutorial in combination with this example.
+This example is referenced in the tutorial [Implement JWT Authorization](https://qlik.dev/authenticate/jwt/implement-jwt-authorization/). It is recommended to use this tutorial in combination with this example.
 
 ---
-
 
 By authorizing users with JWTs, you can embed analytics from Qlik into your own web applications using your host application's access control model.
 
