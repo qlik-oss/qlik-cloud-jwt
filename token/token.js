@@ -2,7 +2,7 @@ const jsonWebToken = require("jsonwebtoken");
 const fs = require("fs");
 const config = require("../config/config");
 
-const key = fs.readFileSync(".data/private.key.txt", "utf8");
+const key = fs.readFileSync(".data/private.key", "utf8");
 const methods = {
   generate: function (sub, name, email, groups = []) {
     // kid and issuer have to match with the IDP config and the audience has to be qlik.api/jwt-login-session
