@@ -19,7 +19,7 @@ export const auth = async () => {
     currentLoginType,
     loginTypes,
   };
-  
+
   // 2) get logged in
   if (currentLoginType === loginTypes.JWT_LOGIN) await handleAutomaticLogin();
   else if (currentLoginType === loginTypes.INTERACTIVE_LOGIN)
@@ -67,7 +67,7 @@ export const auth = async () => {
   }
 
   // 3) get CSRF token
-  const csrfTokenInfo = await await fetch(
+  const csrfTokenInfo = await fetch(
     `https://${tenantDomain}/api/v1/csrf-token?qlik-web-integration-id=${qlikWebIntegrationId}`,
     {
       credentials: "include",
